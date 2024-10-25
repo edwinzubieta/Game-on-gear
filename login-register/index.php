@@ -31,11 +31,11 @@
                     <!-- Formulario de login y register-->
                     <div class="contenedor__login-register">
                         <!-- login -->
-                        <form action="" class="formulario__login">
+                        <form action="php/login_usuario_be.php" method = "POST" class="formulario__login">
 
                             <h2>Iniciar sesion</h2>
-                            <input type="text" placeholder="Correo electronico">
-                            <input type="password" placeholder="Contraseña">
+                            <input type="text" placeholder="Correo electronico" name="correo">
+                            <input type="password" placeholder="Contraseña" name="contrasena">
                             <button>Entrar</button>
                         </form>
 
