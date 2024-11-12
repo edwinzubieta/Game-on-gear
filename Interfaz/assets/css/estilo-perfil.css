@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+    /* Agrega esta línea para que el body ocupe al menos la altura de la pantalla */
+    min-height: 100vh; 
+    /* Agrega display: flex y flex-direction: column para usar flexbox */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #264653; /* Color de fondo de la cabecera */
+    color: #ffffff; /* Color de texto de la cabecera */
+    padding: 10px 0; /* Espacio en la parte superior e inferior */
+}
+
+.navbar {
+    display: flex; /* Flexbox para disposición horizontal */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Centra verticalmente */
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto; /* Centra la barra de navegación */
+    padding: 0 20px; /* Espaciado lateral */
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none; /* Elimina el estilo de lista */
+    padding: 0; /* Elimina padding de la lista */
+    font-weight: bold;
+}
+
+.nav-links li {
+    display: inline; /* Elementos en línea */
+    margin-left: 20px; /* Espacio entre los enlaces */
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #ffffff; /* Color de texto de los enlaces */
+    text-decoration: none; /* Elimina subrayado */
+    transition: color 0.3s; /* Transición suave para el color */
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #2a9d8f; /* Color al pasar el mouse */
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Centra el contenido */
+    padding: 20px; /* Espacio interno */
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+h1 {
+    color: #264653; /* Color del título principal */
+}
+
+h2 {
+    color: #2a9d8f; /* Color de los subtítulos */
+}
+
+.perfil-info, .perfil-acciones {
+    background-color: #f9f9f9; /* Fondo suave para las secciones */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.btn {
+    display: inline-block; /* Estilo de bloque en línea */
+    padding: 10px 15px; /* Espacio interno */
+    background-color: #2a9d8f; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 10px; /* Espacio superior */
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e9c46a; /* Color del botón al pasar el mouse */
+    font-weight: bold;
+}
+
+footer {
+    text-align: center; 
+    background-color: #264653; 
+    color: #ffffff; 
+    /* Elimina position: relative y bottom: 0 */
+    /*  position: relative; 
+        bottom: 0; */
+    width: 100%; 
+    /* Agrega margin-top: auto para que el footer se "pegue" al final */
+    margin-top: auto;
+}
+
+
+    .boton-cerrar-sesion {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #d9534f;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .boton-cerrar-sesion:hover {
+        background-color: #c9302c;
+    }

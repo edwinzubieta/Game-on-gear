@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+    background-color: #f5f5f5; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+}
+
+/* Estilos del encabezado y la navegación */
+header {
+    background-color: #264653; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #264653;
+    color: white;
+}
+
+.nav-links {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+    font-weight: bold;
+}
+
+.nav-links li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-left: 20px; /* Espacio entre los enlaces */
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s; /* Transición suave al pasar el mouse */
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #2a9d8f; /* Color al pasar el mouse */
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Centra el contenido */
+    padding: 20px; /* Espacio interno */
+    background-color: white; /* Fondo blanco para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1, h2 {
+    color: #264653; /* Color de los encabezados */
+}
+
+h1 {
+    margin-bottom: 10px; /* Espacio inferior para el título */
+}
+
+h2 {
+    margin-top: 20px; /* Espacio superior para los subtítulos */
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan */
+    justify-content: center; /* Centra las imágenes */
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.galeria img {
+    width: 150px; /* Ancho de las imágenes */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
+
+/* Estilos para el botón */
+.btn {
+    display: inline-block; /* Estilo de bloque en línea */
+    padding: 10px 20px; /* Espacio interno */
+    background-color: #2a9d8f; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 40px; /* Espacio superior */
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.btn:hover {
+    background-color: #e9c46a; /* Color del botón al pasar el mouse */
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 10px; /* Espacio interno */
+    background-color: #264653; /* Color de fondo del pie de página */
+    color: white; /* Color del texto en el pie de página */
+    position: relative; /* Posición relativa para el pie de página */
+    bottom: 0; /* Alineación al fondo */
+    width: 100%; /* Ancho completo */
+}
+

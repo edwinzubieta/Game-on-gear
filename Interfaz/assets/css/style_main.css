@@ -1,0 +1,253 @@
+/* Reseteo de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #264653;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Sección principal */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: url('golf.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: rgba(137, 194, 103, 1);
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #264653;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #264653;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: -15rem; /* Ajusta este valor para reducir el espacio */
+    margin-bottom: 0; /* Elimina el margen inferior si es necesario */
+}
+
+/* Sección de categorías */
+.categorias {
+    padding: 2rem;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.categorias-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categoria-item {
+    flex: 1 1 200px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.categoria-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
+
+.categoria-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.categoria-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Sección de contacto */
+.contacto {
+    padding: 2rem;
+    background-color: #264653;
+    color: white;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contacto a.btn {
+    background-color: rgba(137, 194, 103, 1);
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    margin-top: 30px; /* Espacio entre el texto y el botón */
+    /* Ajusta el margen para moverlo si es necesario */
+}
+
+/* Estilos para la imagen de golf */
+.golf-image {
+    width: 1000px; /* Ajusta el tamaño según sea necesario */
+    margin: 0px auto; /* Centra la imagen y agrega margen superior e inferior */
+    display: block; /* Asegura que la imagen esté centrada como un bloque */
+}
+
+/* Estilos para el carrusel */
+.carrusel {
+    max-width: 900px; /* Ajusta el tamaño máximo del carrusel */
+    height: 500px; /* Altura del carrusel */    
+    overflow: hidden; /* Oculta las imágenes que sobresalen */
+    margin: 10px auto; /* Espacio arriba y abajo del carrusel */
+    position: relative; /* Necesario para la posición de los botones */
+}
+
+.carrusel-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Animación suave para el desplazamiento */
+}
+
+.carrusel-slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del ancho del contenedor */
+    opacity: 0.5; /* Atenúa las imágenes no activas */
+    transition: opacity 0.5s ease; /* Transición suave para el cambio de opacidad */
+}
+
+.carrusel-slide.active {
+    opacity: 1; /* Imagen activa totalmente visible */
+}
+
+.carrusel-slide img {
+    width: 85%; /* Ajusta el ancho al 100% del contenedor */
+    height: 90%; /* Asegúrate de que ocupe toda la altura del contenedor */
+    object-fit: cover; /* Cubre el área del contenedor sin distorsionar la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+}
+
+.carrusel-slide:nth-child(2) img {
+    width: 83%; /* Cambia el ancho solo para la segunda imagen */
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Ajuste diferente para la segunda imagen */
+    margin: 20px auto; /* Margen para centrar */
+}
+
+.carrusel-slide:nth-child(3) img {
+    width: 75%; /* Cambia el ancho solo para la tercera imagen */
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Ajuste diferente para la segunda imagen */
+    margin: 20px auto; /* Margen para centrar */
+}
+
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-120%);
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border: none;
+    cursor: pointer;
+    font-size: 2rem; /* Ajusta el tamaño de la flecha */
+    padding: 10px;
+    z-index: 100; /* Asegúrate de que los botones estén por encima de las imágenes */
+}
+
+.carrusel-btn.prev {
+    left: 10px; /* Posición del botón de retroceso */
+}
+
+.carrusel-btn.next {
+    right: 10px; /* Posición del botón de avance */
+}

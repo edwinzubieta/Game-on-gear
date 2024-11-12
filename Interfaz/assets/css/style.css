@@ -1,0 +1,249 @@
+/* 
+  Tabla de contenidos:
+
+  1. Reseteo de estilos
+  2. Estilos generales del cuerpo
+  3. Barra de navegación
+  4. Menú desplegable
+  5. Sección Hero (principal)
+  6. Carrusel
+  7. Sección Categorías
+  8. Sección Contacto
+  9. Media Queries (para responsive design) 
+*/
+
+/* 1. Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Estilos generales del cuerpo */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0; 
+  }
+  
+  /* 3. Barra de navegación */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #264653;
+    color: white; 
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* 4. Menú desplegable */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* 5. Sección Hero (principal) */
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: url('golf.jpg') center/cover no-repeat; 
+    color: white; 
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: rgba(137, 194, 103, 1); 
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #264653; 
+    margin: 1rem 0;
+  }
+  
+  /* 6. Carrusel */
+  .carrusel {
+    max-width: 900px;
+    height: 500px;  
+    overflow: hidden;
+    margin: 10px auto; 
+    position: relative; 
+  }
+  
+  .carrusel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carrusel-slide {
+    min-width: 100%; 
+    opacity: 0.5; 
+    transition: opacity 0.5s ease; 
+  }
+  
+  .carrusel-slide.active {
+    opacity: 1;
+  }
+  
+  .carrusel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  .carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px;
+    z-index: 100; 
+  }
+  
+  .carrusel-btn.prev {
+    left: 10px;
+  }
+  
+  .carrusel-btn.next {
+    right: 10px;
+  }
+  
+  
+  /* 7. Sección Categorías */
+  .categorias {
+    padding: 2rem;
+    background-color: #e9ecef; 
+    text-align: center;
+  }
+  
+  .categorias h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .categorias-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .categoria-item {
+    flex: 1 1 200px; 
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .categoria-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0; 
+  }
+  
+  .categoria-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .categoria-item p {
+    font-size: 1rem;
+    color: #666; 
+  }
+  
+  /* 8. Sección Contacto */
+  .contacto {
+    padding: 2rem;
+    background-color: #264653; 
+    color: white;
+    text-align: center;
+  }
+  
+  .contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contacto a.btn {
+    background-color: transparent; /* Sin color de fondo */
+    border: 2px solid rgba(137, 194, 103, 1); /* Borde verde */
+    color: rgba(137, 194, 103, 1); /* Texto verde */
+    padding: 15px 30px; 
+    text-decoration: none; /* Quitar subrayado */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  .contacto a.btn:hover {
+    background-color: rgba(137, 194, 103, 1); /* Fondo verde al pasar el ratón */
+    color: white; /* Texto blanco al pasar el ratón */
+  }
+  
+  /* 9. Media Queries (para responsive design) */
+  @media (max-width: 768px) { 
+    /* Ajustes para pantallas más pequeñas (tablets y móviles) */
+    .categorias-grid {
+      flex-direction: column; /* Apilar elementos en una columna */
+    }
+  
+    .carrusel {
+      height: 300px; /* Ajusta la altura del carrusel */
+    }
+  }

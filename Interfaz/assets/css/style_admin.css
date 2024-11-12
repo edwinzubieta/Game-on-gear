@@ -1,0 +1,124 @@
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para los botones de administración */
+.admin {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.admin-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Estilos para el botón (reemplazados) */
+.admin-buttons .btn-admin { 
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #264653;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold; 
+}
+
+/* Anclaje de la sección de contacto al fondo */
+.contacto {
+    padding: 2rem;
+    background-color: #264653;
+    color: white;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Contenedor principal para que se expanda hasta llenar la pantalla */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; /* Tipografía añadida */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    color: rgba(137, 194, 103, 1);
+    text-align: center;
+}
+
+.carrusel-slide img {
+    max-width: 50%; 
+    height: auto;
+}
+
+/* Barra de navegación (añadido) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #264653;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
