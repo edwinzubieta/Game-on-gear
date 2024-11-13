@@ -16,7 +16,7 @@ if (mysqli_num_rows($verificar_rol) == 0) {
     echo '
         <script>
             alert("Error: El rol especificado no existe en la base de datos.");
-            window.location = "../index.php";
+            window.location = "../index.html";
         </script>
     ';
     exit();
@@ -28,7 +28,7 @@ if (mysqli_num_rows($verificar_correo) > 0) {
     echo '
         <script>
             alert("Este correo ya está registrado, intenta con uno diferente.");
-            window.location = "../index.php";
+            window.location = "../index.html";
         </script>
     ';
     exit();
@@ -40,7 +40,7 @@ if (mysqli_num_rows($verificar_usuario) > 0) {
     echo '
         <script>
             alert("Este usuario ya está registrado, intenta con uno diferente.");
-            window.location = "../index.php";
+            window.location = "../index.html";
         </script>
     ';
     exit();
@@ -55,14 +55,14 @@ if ($ejecutar) {
     echo '
         <script>
             alert("Usuario almacenado exitosamente");
-            window.location = "../index.php";
+            window.location = "../index.html";
         </script>
     ';
 } else {
     echo '
         <script>
             alert("Intentelo de nuevo");
-            window.location = "../index.php";
+            window.location = "../index.html";
         </script>
     ';
 }
