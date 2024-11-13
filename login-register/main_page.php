@@ -8,7 +8,7 @@
         
             <script>
                 alert("Para acceder, primero debes iniciar sesion");
-                window.location = "index.php";
+                window.location = "index.html";
             </script>
 
         ';
